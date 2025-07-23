@@ -55,6 +55,12 @@ def main():
        
        multa = calcular_multa(velocidade, loc)
        
+       if multa is not None:
+            if multa == 0:
+                print("\nNão há multa a pagar.")
+            else:
+                print(f"\nMulta a pagar: {multa}€")
+       
     except ValueError:
         print("Erro: Insira valores válidos (número para velocidade e local).")
         
