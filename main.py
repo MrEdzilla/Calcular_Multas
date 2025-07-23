@@ -1,7 +1,5 @@
 import os
 
-velocidade = float(input("Registe a velocidade do automóvel ligeiro: "))
-
 def multa_localidade(velocidade):
     if velocidade <= 50:
         return 0
@@ -40,3 +38,8 @@ def calcular_multa(velocidade, loc):
     else:
         print("Opção inválida!")
         return None
+    
+def main():
+    print("--------- Bem-vindo ao Sistema de Multas ---------")
+    try:
+       velocidade = float(input("Registe a velocidade do automóvel ligeiro: ")) 
