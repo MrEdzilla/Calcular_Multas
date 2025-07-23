@@ -12,7 +12,7 @@ def multa_localidade(velocidade):
     elif velocidade >= 120:
         return 320
     
-def multa_fora(velocidade):
+def multa_fora_localidade(velocidade):
     if velocidade <= 90:
         return 0
     elif velocidade > 90:
