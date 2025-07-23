@@ -42,4 +42,15 @@ def calcular_multa(velocidade, loc):
 def main():
     print("--------- Bem-vindo ao Sistema de Multas ---------")
     try:
-       velocidade = float(input("Registe a velocidade do automóvel ligeiro: ")) 
+       velocidade = float(input("Registe a velocidade do automóvel ligeiro: "))
+       
+       print("\nOnde circulava o veículo?")
+       print("Escolha uma opção:")
+       print("1 - Localidade")
+       print("2 - Fora da localidade")
+       print("3 - Autoestrada\n")
+       print()
+       
+       loc = int(input("Introduza o local: "))
+       
+       multa = calcular_multa(velocidade, loc)
