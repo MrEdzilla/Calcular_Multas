@@ -64,5 +64,5 @@ def main():
     except ValueError:
         print("Erro: Insira valores válidos (número para velocidade e local).")
         
-    if __name__ == "__main__":
+if __name__ == "__main__":
     main()
