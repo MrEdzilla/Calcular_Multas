@@ -29,3 +29,14 @@ def multa_autoestrada(velocidade):
         return 120
     elif velocidade >= 175:
         return 360
+    
+def calcular_multa(velocidade, loc):
+    if loc == 1:
+        return multa_localidade(velocidade)
+    elif loc == 2:
+        return multa_fora_localidade(velocidade)
+    elif loc == 3:
+        return multa_autoestrada(velocidade)
+    else:
+        print("Opção inválida!")
+        return None
