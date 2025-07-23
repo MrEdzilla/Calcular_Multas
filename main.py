@@ -54,3 +54,6 @@ def main():
        loc = int(input("Introduza o local: "))
        
        multa = calcular_multa(velocidade, loc)
+       
+    except ValueError:
+        print("Erro: Insira valores válidos (número para velocidade e local).")
